@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(white, rgb(255, 249, 182));
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header img{
+    width: 25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.top{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.top-left{
+    flex: 3;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-right{
+    flex: 4;
+    margin-top: 2rem;
+}
+
+.top-left img{
+    width: 70%;
+}
+
+.img-2{
+    width: 100%;
+}
+
+.right-div{
+    margin-left: 2rem;
+}
+
+.right-head{
+    font-weight: bold;
+}
+
+.right-head{
+    margin-bottom: 0.5rem;
+}
+
+ul{
+    margin-bottom: 0.5rem;
+}
+
+.mid{
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+
+.mid-1 .products{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mid-1 img{
+    max-width: 80%;
+}
+
+.mid hr{
+    width: 95%;
+    margin: 1rem auto 1.5rem;
+    background-color: rgb(236, 50, 55);
+    border: none;
+    height: 2px;
+}
+
+.mid-2{
+    margin-bottom: 1.5rem;
+}
+
+.mid-2 .head{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(236, 50, 55);
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.footer .fb, .globe, .call{
+    font-size: 25px;
+    margin-right: 0.3rem;
+}
+
+.edit1{
+    color: rgb(236, 50, 55);
+    font-weight: bold;
+}
+
+@media (max-width: 724px) {
+
+    html{
+        font-size: 80%;
+    }
+    
+    .top{
+        display: block;
+    }
+
+    .top p{
+        text-align: center;
+    }
+    
+    .footer{
+        display: block;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .footer p{
+        padding: 0.5rem;
+    }
+
+    .footer .fb, .globe, .call{
+        font-size: 20px;
+        margin-right: 0.3rem;
+    }
 }
